@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title></title>
+<script language="JavaScript" src="jquery.js"></script>
+<script language="JavaScript" src="sequencer.js"></script>
+</head>
+
+<body>
+<h1>Sequencer</h1>
+
+<style>
+  li.node {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    float: left;
+    margin-right: 5px;
+  }
+
+  li.pass {
+    background-color: #DDD;
+  }
+
+  li.on {
+    background-color: #FFFCE8;
+  }
+
+  li.on.pass {
+    background-color: #F0E067;
+  }
+
+  ul {
+    clear: left;
+    margin-bottom: 10px;
+    float: left;
+  }
+</style>
+<ul class="sequencer layout" style="display:none;">
+  <li class="node" id="node-0"></li>
+  <li class="node" id="node-1"></li>
+  <li class="node" id="node-2"></li>
+  <li class="node" id="node-3"></li>
+  <li class="node" id="node-4"></li>
+  <li class="node" id="node-5"></li>
+  <li class="node" id="node-6"></li>
+  <li class="node" id="node-7"></li>
+  <li class="node" id="node-8"></li>
+  <li class="node" id="node-9"></li>
+</ul>
+
+</body>
+</html>
