@@ -1,2 +1,27 @@
-body
-  background: black
+corner-each(tl, tr, br, bl)
+  -moz-border-radius-topleft tl
+  -webkit-border-top-left-radius tl
+  -moz-border-radius-topright tr
+  -webkit-border-top-right-radius tr
+  -moz-border-radius-bottomleft bl
+  -webkit-border-bottom-left-radius bl
+  -moz-border-radius-bottomright br
+  -webkit-border-bottom-right-radius br
+
+corner(px)
+  corner-each(px,px,px,px)
+
+corner-top(px)
+  corner-each(px,px,0,0)
+
+corner-bottom(px)
+  corner-each(0,0,px,px)
+
+corner-left(px)
+  corner-each(px,0,0,px)
+
+corner-right(px)
+  corner-each(0,px,px,0)
+
+li.node
+  corner(4px)

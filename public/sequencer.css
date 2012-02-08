@@ -1,0 +1,130 @@
+li {
+  display: block;
+  float: left;
+}
+  
+li.node {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #CCC;
+    float: left;
+    margin-right: 5px;
+}
+
+li.pass {
+    background-color: #DDD;
+}
+
+li.on {
+    background-color: #FFFCE8;
+}
+
+li.on.pass {
+    background-color: #F0E067;
+}
+
+ul {
+    clear: left;
+    margin-bottom: 10px;
+    float: left;
+}
+
+button.css3button.green {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+	color: #fbf7ff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#9df570 0%,
+		#339145);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#9df570),
+		to(#339145));
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #003366;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(223,230,229,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(223,230,229,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+button.css3button.red {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #fbf7ff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#f57070 0%,
+		#913333);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#f57070),
+		to(#913333));
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #003366;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(223,230,229,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(223,230,229,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+li.node.pass {
+    background: #fefcea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* IE10+ */
+    background: linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+}
+
+li.node.pass.on {
+    background: #f9c667; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9c667 0%, #f79621 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9c667), color-stop(100%,#f79621)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9c667 0%,#f79621 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9c667 0%,#f79621 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9c667 0%,#f79621 100%); /* IE10+ */
+    background: linear-gradient(top,  #f9c667 0%,#f79621 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 ); /* IE6-9 */
+}
+
+li.node.on {
+    background: #d5cea6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d5cea6 0%, #c9c190 40%, #b7ad70 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d5cea6), color-stop(40%,#c9c190), color-stop(100%,#b7ad70)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* IE10+ */
+    background: linear-gradient(top,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+}
+
+/* From: http://www.urbanfonts.com/fonts/graffiti-fonts.htm */
+@font-face {
+    font-family: FatBoySlim;
+    src: url('fbsbltc.ttf');
+    font-weight:bold;
+}
+
+header {
+    font-family: FatBoySlim;
+}

@@ -44,7 +44,7 @@ app.configure('production', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', function(req, res){
+app.get('/oe', function(req, res){
 	res.render('index', {
 	});
 });
@@ -64,7 +64,7 @@ function callback() {
     }, 500)
 }
 
-var firmata = require('firmata');
+/*var firmata = require('firmata');
 var board = new firmata.Board('/dev/tty.usbserial-A9007Wfo',function(){
     board.pinMode(3, board.MODES.OUTPUT);
     setInterval(function() {
@@ -77,10 +77,10 @@ var board = new firmata.Board('/dev/tty.usbserial-A9007Wfo',function(){
 	//callback();
     }, 1000);
 
-});
+});*/
 
 // Only listen on $ node app.js
 if (!module.parent) {
-  app.listen(8080);
+  app.listen(6660);
   console.log("Express server listening on port %d", app.address().port)
 }
