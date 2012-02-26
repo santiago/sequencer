@@ -34,7 +34,7 @@ function SequencerControl(opts) {
     this.el= $(".sequencer.layout").clone();
     var $el= this.el;
     $el.removeClass("layout");
-    $("body").append($el.show());
+    $("body .sequencer-list").append($el.show());
 
     opts.onNode= function(node) {
 	    $el.find("li.pass").removeClass("pass");
@@ -49,6 +49,20 @@ function SequencerControl(opts) {
 	    var index= $(this).attr("id").split("-")[1];
 	    self.nodes[index]= $(this).hasClass("on") ? 1 : 0;
     });
+    
+    $el.find("button#start").click(function(e) {
+        $(this).blur();
+        self.start();
+        $el.find("li.start").hide();
+        $el.find("li.stop").show();
+    });
+
+    $el.find("button#stop").click(function(e) {
+        $(this).blur();
+        self.stop();
+        $el.find("li.start").show();
+        $el.find("li.stop").hide();
+    });
 }
 SequencerControl.prototype= Sequencer.prototype;
 
@@ -62,3 +76,11 @@ SequencerControl.prototype.reset= function() {
 	    }
     }
 };
+
+$(document).ready(function() {
+    var seqs= [];
+    $("#new").click(function() {
+        $(this).blur();
+        seqs.push(new SequencerControl());
+    });
+});
